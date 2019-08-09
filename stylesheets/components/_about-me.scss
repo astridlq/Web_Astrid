@@ -1,0 +1,88 @@
+/* PROFILE*/
+
+.info-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 300px;
+  overflow: hidden;
+  margin: 70px auto;
+  position: relative;
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+.contact-intro {
+  background-color: $yellow;
+  padding: 40px;
+}
+
+.tech-skills {
+  background: #fedd3454;
+  padding: 40px;
+  h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  ul {
+    list-style-type: circle;
+    padding-inline-start: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .info-profile {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    .contact-intro {
+      object-fit: cover;
+
+      margin: 0 auto;
+      width: 300px;
+    }
+    .tech-skills {
+      margin: 0 auto;
+      width: 300px;
+    }
+    img {
+      object-fit: cover;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media(max-width: 425px) {
+  .info-profile {
+    .contact-intro {
+      width: 100%;
+    }
+    .tech-skills {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+.email-tel {
+  max-width: 300px;
+  margin: 0 auto;
+  border-bottom: $yellow solid 3px;
+  text-align: center;
+  font-family: $bold-font;
+  font-size: 20px;
+  a {
+    margin-bottom: 1rem;
+    color: black;
+    &:hover{
+      text-decoration: none;
+      color: $yellow;
+    }
+  }
+}

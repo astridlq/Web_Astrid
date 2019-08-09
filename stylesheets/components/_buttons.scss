@@ -1,0 +1,87 @@
+.button {
+  color: $gray;
+  width: 100%;
+  // margin: 10px;
+  padding: 20px;
+  border: 2px solid $gray;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow:hidden;
+  // transition: .3s;
+  // &:after {
+  // overflow:hidden;
+
+  //   position: absolute;
+  //   transition: .3s;
+  //   content: '';
+  //   width: 0;
+  //   left: 50%;
+  //   bottom: 0;
+  //   height: 3px;
+  //   background: $blue;
+  // }
+  // &.button:after {
+  //   height: 120%;
+  //   left: -10%;
+  //   transform: skewX(15deg);
+  //   z-index: -1;
+  // }
+  &:hover {
+    overflow:hidden;
+    color: $yellow;
+    text-decoration: none;
+    border: 2px solid $yellow;
+
+    cursor: pointer;
+  }
+  //   &:after {
+  //     width: 100%;
+  //     left: 0;
+  //   }
+  //   &.button {
+  //     color: white;
+  //   }
+  //   &.button:after {
+  //     left: -10%;
+  //     width: 120%;
+  //   }
+  // }
+}
+
+.button-full {
+  color: white !important;
+  background-color: $yellow;
+  // border: 2px solid $yellow;
+  width: 100%;
+  margin-right: 5px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow:hidden;
+}
+
+
+.arrow:before{
+  content:"→";
+  position:absolute;
+  color:black;
+  left: 83%;
+  opacity: 0;
+  -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.arrow:hover:before{
+  left:84%;
+  opacity:1;
+}
+
+.back-button {
+  color: white;
+  padding-top: 20px;
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+  }
+}

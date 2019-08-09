@@ -1,0 +1,99 @@
+.container-web-projects {
+  padding: 100px 0;
+  position: relative;
+}
+
+.card-columns {
+  a{
+    color: $gray;
+  }
+  a:hover {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+@media(min-width: 1024px) {
+.card-columns {
+        -webkit-column-count:1;
+        -moz-column-count:1;
+        column-count:1;
+    }
+  }
+
+.web-card {
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 18px;
+  opacity: 1;
+  display: inline-block;
+  h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500em;
+    opacity: .7;
+    margin-bottom: 0;
+  }
+  img {
+    border-bottom: $background-color solid 15px;
+    opacity: 0.8;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.info-web-card {
+  position: relative;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.tags {
+  color: $gray;
+  font-size: 10px;
+  font-family: $bold-font;
+}
+
+// ARROW
+.arrow-click {
+  position: absolute;
+  top: 46px;
+  right: 7%;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.web-card:hover {
+  img {
+    opacity: 1;
+  }
+  .arrow-click {
+    -webkit-transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
+  }
+}
+
+
+/* Sections Titles */
+
+.title-web-project {
+  font-size: 60px;
+  font-weight: 600;
+  position: absolute;
+  top: -48px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+.title-web-project {
+    font-size: 38px;
+    position: absolute;
+    top: 0;
+}
+}
+

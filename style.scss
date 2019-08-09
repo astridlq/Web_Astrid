@@ -1,0 +1,57 @@
+// CONFIG
+
+// Import Google fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url('https://fonts.googleapis.com/css?family=Lora:400i,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,400,700,900&display=swap');
+
+// Define fonts for body and headers
+$body-font: "Muli", "sans-serif";
+$headers-font: "Raleway", "Helvetica", "sans-serif";
+$bold-font: "Heebo", "sans-serif";
+
+
+// Colors
+$red: #FE5F55;
+$blue: #0FA3B1;
+$yellow: #FEDD33;
+$orange: #F77402;
+$green: #5DEF62;
+$gray: #3B413C;
+$light-gray: #cccfdd;
+$background-color: #F7F7F7;
+
+
+
+/* Main */
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  font-family: $body-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: $bold-font;
+}
+
+// Components import
+@import "./stylesheets/components/_buttons.scss";
+@import "./stylesheets/components/_life-info.scss";
+@import "./stylesheets/components/_container.scss";
+@import "./stylesheets/components/_navbar.scss";
+@import "./stylesheets/components/_footer.scss";
+@import "./stylesheets/components/_banner.scss";
+@import "./stylesheets/components/_gallery.scss";
+@import "./stylesheets/components/_web-cards-projects.scss";
+@import "./stylesheets/components/_skills.scss";
+@import "./stylesheets/components/_images-project-list.scss";
+@import "./stylesheets/components/_about-me.scss";
+@import "./stylesheets/components/_ironhack.scss";
+@import "./stylesheets/components/_fst-asie.scss";
+@import "./stylesheets/components/_recruitme.scss";
+

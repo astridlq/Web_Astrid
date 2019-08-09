@@ -1,0 +1,26 @@
+.image-project-list {
+  column-count: 2;
+  column-gap: 50px;
+  padding: 5px;
+  list-style-type: none;
+  img {
+    height: 50%;
+    margin: 20px auto;
+    width: 100%;
+    // box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  }
+}
+
+.image-project-list-3 {
+  column-count: 2;
+  column-gap: 50px;
+  padding: 5px;
+  list-style-type: none;
+  img {
+    margin: 30px auto;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  }
+}

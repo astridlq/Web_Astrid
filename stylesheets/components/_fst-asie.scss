@@ -1,0 +1,51 @@
+.banner-fst {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/fst-banner.png");
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+
+.header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  .header-quote {
+    margin: auto;
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 600%;
+  }
+  a{
+    color: white;
+    &:hover{
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+  h1{
+    border-bottom: solid 1px $yellow;
+    font-weight: 600;
+    font-size: 500%;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 150%;
+  }
+  .name-color{
+    color: $yellow;
+  }
+}
+
+.graphic-design {
+  p {
+    margin-bottom: 50px;
+  }
+}

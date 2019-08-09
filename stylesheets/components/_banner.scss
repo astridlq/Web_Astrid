@@ -1,0 +1,96 @@
+/* Banner */
+
+.banner-full {
+  min-height: 110%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1521811628991-7a3ea581f7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.banner-ironhack {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/ironhack-banner.png");
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.banner-guithub {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/guithub-banner.png");
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+
+.banner-gallia {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/gallia.jpeg");
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+
+.header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  .header-quote {
+    margin: auto;
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 600%;
+  }
+  a{
+    color: white;
+    &:hover{
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+  h1{
+    border-bottom: solid 1px $yellow;
+    font-weight: 600;
+    font-size: 500%;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 150%;
+  }
+  .name-color{
+    color: $yellow;
+  }
+}
+
+@media(max-width: 728px) {
+  .header-banner h1 {
+    font-size: 400% !important;
+    margin: auto;
+    padding: 20px;
+  }
+}
+
+
+@media(max-width: 425px) {
+  .header-banner h1 {
+    font-size: 300% !important;
+  }
+}

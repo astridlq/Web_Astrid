@@ -1,0 +1,19 @@
+{
+  "name": "Web_Astrid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html contact.html"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "posthtml-include": "^1.2.0",
+    "sass": "^1.22.7"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "scrollreveal": "^4.0.5",
+    "underscore": "^1.9.1"
+  }
+}

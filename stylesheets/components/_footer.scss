@@ -1,0 +1,28 @@
+/* Footer */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // background-color: $background-color;
+  height: 90px;
+  margin-top: 50px;
+  padding-left: 12%;
+  color: $light-gray;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: $light-gray;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 20px 0;
+  margin-right: 20px;
+}
+.footer-links a:hover {
+  opacity: 1;
+  color: $yellow;
+}
+
