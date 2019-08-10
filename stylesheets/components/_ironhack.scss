@@ -61,22 +61,32 @@
   }
 }
 
+@media(max-width: 768px) {
+  .mindmap-scope {
+    display: block;
+    overflow: hidden;
+    img {
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
+    }
+  }
+}
+
 .wireframing {
   margin-bottom: 50px;
 }
 
 
 @media(max-width: 768px) {
-  .persona {
+  .persona-intro {
     display: block;
     overflow: hidden;
-  }
-  .header-quote {
-    h1{
-    font-size: 400%;
-  }
-  p {
-    font-size: 90%;
+    img {
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
+    }
   }
 }
-}
+

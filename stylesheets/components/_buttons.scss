@@ -1,32 +1,12 @@
 .button {
   color: $gray;
   width: 100%;
-  // margin: 10px;
   padding: 20px;
   border: 2px solid $gray;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   overflow:hidden;
-  // transition: .3s;
-  // &:after {
-  // overflow:hidden;
-
-  //   position: absolute;
-  //   transition: .3s;
-  //   content: '';
-  //   width: 0;
-  //   left: 50%;
-  //   bottom: 0;
-  //   height: 3px;
-  //   background: $blue;
-  // }
-  // &.button:after {
-  //   height: 120%;
-  //   left: -10%;
-  //   transform: skewX(15deg);
-  //   z-index: -1;
-  // }
   &:hover {
     overflow:hidden;
     color: $yellow;
@@ -35,24 +15,11 @@
 
     cursor: pointer;
   }
-  //   &:after {
-  //     width: 100%;
-  //     left: 0;
-  //   }
-  //   &.button {
-  //     color: white;
-  //   }
-  //   &.button:after {
-  //     left: -10%;
-  //     width: 120%;
-  //   }
-  // }
 }
 
 .button-full {
   color: white !important;
   background-color: $yellow;
-  // border: 2px solid $yellow;
   width: 100%;
   margin-right: 5px;
   padding: 20px;
@@ -61,6 +28,16 @@
   position: relative;
   overflow:hidden;
 }
+
+
+@media(max-width: 768px) {
+    .button {
+      font-size: 10px;
+    }
+    .button-full {
+      font-size: 10px;
+    }
+  }
 
 
 .arrow:before{

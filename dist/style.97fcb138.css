@@ -47,6 +47,15 @@ h1, h2 {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .button {
+    font-size: 10px;
+  }
+
+  .button-full {
+    font-size: 10px;
+  }
+}
 .arrow:before {
   content: "→";
   position: absolute;
@@ -219,23 +228,27 @@ h1, h2 {
 }
 
 .container-contact {
-  margin: 0 20px;
+  margin: 0 auto;
+  padding: 0 10px;
   min-height: 65vh;
   max-width: 900px;
 }
 
 .container-ironhack {
-  margin: 50px 20px;
+  margin: 50px auto;
+  padding: 0 10px;
   max-width: 900px;
 }
 
 .container-fst {
-  margin: 50px 20px;
+  margin: 50px auto;
+  padding: 0 10px;
   max-width: 900px;
 }
 
 .container-recruit-me {
-  margin: 50px 20px;
+  margin: 50px auto;
+  padding: 0 10px;
   max-width: 950px;
 }
 .container-recruit-me h2 {
@@ -386,7 +399,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: top;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1521811628991-7a3ea581f7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1050,q_auto/v1565432033/portfolio/banner_main_ejezhc.jpg");
   background-attachment: fixed;
   z-index: -2;
 }
@@ -397,7 +410,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ironhack-banner.a437cbb2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429529/portfolio/ironhack-banner_oqfrcz.png");
   background-attachment: fixed;
   z-index: -2;
 }
@@ -408,7 +421,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/guithub-banner.88274fe3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429528/portfolio/guithub-banner_c2vpwr.png");
   background-attachment: fixed;
   z-index: -2;
 }
@@ -627,6 +640,10 @@ h1, h2 {
 }
 
 @media (max-width: 768px) {
+  .web-card img {
+    opacity: 1;
+  }
+
   .title-web-project {
     font-size: 38px;
     position: absolute;
@@ -707,6 +724,11 @@ h1, h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .image-project-list-3 {
+    column-count: 1;
+  }
+}
 /* PROFILE*/
 .info-profile {
   display: grid;
@@ -851,21 +873,30 @@ h1, h2 {
   margin: 30px;
 }
 
+@media (max-width: 768px) {
+  .mindmap-scope {
+    display: block;
+    overflow: hidden;
+  }
+  .mindmap-scope img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+}
 .wireframing {
   margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  .persona {
+  .persona-intro {
     display: block;
     overflow: hidden;
   }
-
-  .header-quote h1 {
-    font-size: 400%;
-  }
-  .header-quote p {
-    font-size: 90%;
+  .persona-intro img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
   }
 }
 .banner-fst {
@@ -962,6 +993,16 @@ h1, h2 {
   color: #FEDD33;
 }
 
+@media (max-width: 768px) {
+  .header-banner h1 {
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .header-banner p {
+    font-size: 16px;
+  }
+}
 .screens {
   text-align: center;
   margin: 50px auto;
@@ -970,6 +1011,18 @@ h1, h2 {
   margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .image-project-list {
+    column-count: 1;
+  }
+  .image-project-list ol {
+    padding-inline-start: 0;
+    list-style-type: none;
+  }
+  .image-project-list li {
+    margin-top: 15px;
+  }
+}
 .ui-figma {
   margin: 50px auto;
 }
@@ -977,11 +1030,29 @@ h1, h2 {
   margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .ui-figma img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+}
 .user-journey-info {
   display: flex;
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .user-journey-info {
+    display: block;
+    overflow: hidden;
+  }
+  .user-journey-info img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+}
 .login-recruitme {
   margin: 50px 0;
   font-size: 12px;

@@ -90,6 +90,11 @@
 }
 
 @media (max-width: 768px) {
+  .web-card {
+    img {
+      opacity: 1;
+    }
+  }
 .title-web-project {
     font-size: 38px;
     position: absolute;

@@ -44,6 +44,20 @@
   }
 }
 
+
+@media(max-width: 768px) {
+  .header-banner {
+    h1 {
+      font-size: 25px;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    p {
+    font-size: 16px;
+  }
+  }
+}
+
 .screens {
   text-align: center;
   margin: 50px auto;
@@ -52,11 +66,34 @@
   }
 }
 
-.ui-figma {
-    margin: 50px auto;
-    ol > li{
-      margin-top: 30px;
+@media(max-width: 768px) {
+  .image-project-list {
+    column-count: 1;
+    ol {
+      padding-inline-start: 0;
+      list-style-type: none;
     }
+    li {
+      margin-top: 15px;
+    }
+  }
+}
+
+.ui-figma {
+  margin: 50px auto;
+  ol > li{
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 768px) {
+  .ui-figma {
+    img {
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
+    }
+  }
 }
 
 .user-journey-info {
@@ -64,8 +101,21 @@
   align-items: center;
 }
 
+@media(max-width: 768px) {
+  .user-journey-info {
+    display: block;
+    overflow: hidden;
+    img {
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
+    }
+  }
+}
+
 .login-recruitme {
   margin: 50px 0;
   font-size: 12px;
   color: $light-gray;
 }
+
