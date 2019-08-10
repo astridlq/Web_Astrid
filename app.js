@@ -1,3 +1,5 @@
+import throttle from "lodash/throttle";
+
 const sr = ScrollReveal ();
 
 // HOMEPAGE:
@@ -31,16 +33,19 @@ sr.reveal('.email-tel', { delay: 200, duration: 2000 });
 
 
 // NAVBAR SCROLL
-const checkHeader = _.throttle(() => {
+const checkHeader = throttle(() => {
     console.log('checkHeader');
 
     const scrollPosition = Math.round(window.scrollY);
+    console.log(scrollPosition);
     if (scrollPosition > 300){
-        document.querySelector('navbar-1').classList.add('sticky');
+        document.querySelector('.navbar-1').classList.add('sticky');
     }
     else {
-        document.querySelector('navbar-1').classList.remove('sticky');
+        document.querySelector('.navbar-1').classList.remove('sticky');
     }
 }, 300);
 
-window.addEventListener('scroll', checkHeader);
+window.addEventListener('scroll', checkHeader, {
+  passive: true
+});

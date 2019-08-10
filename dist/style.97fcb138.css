@@ -299,7 +299,7 @@ h1, h2 {
   text-decoration: none;
 }
 
-.navbar-1 .sticky {
+.navbar-1.sticky {
   background-color: #FEDD33;
 }
 
@@ -745,6 +745,7 @@ h1, h2 {
     margin: 0 auto;
     grid-template-columns: 1fr;
     margin-bottom: 20px;
+    max-height: none;
   }
   .info-profile .contact-intro {
     object-fit: cover;
