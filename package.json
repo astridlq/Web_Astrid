@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "parcel": "^1.12.3",
     "posthtml-include": "^1.2.0",
     "sass": "^1.22.7"
   },
