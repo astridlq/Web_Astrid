@@ -771,9 +771,7 @@ sr.reveal('.email-tel', {
 }); // NAVBAR SCROLL
 
 var checkHeader = (0, _throttle.default)(function () {
-  console.log('checkHeader');
   var scrollPosition = Math.round(window.scrollY);
-  console.log(scrollPosition);
 
   if (scrollPosition > 300) {
     document.querySelector('.navbar-1').classList.add('sticky');
@@ -812,7 +810,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59166" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50622" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

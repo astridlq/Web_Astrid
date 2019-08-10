@@ -419,7 +419,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/gallia.4eb6f571.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429523/portfolio/gallia_t5jpvq.jpg");
   background-attachment: fixed;
   z-index: -2;
 }
@@ -795,7 +795,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ironhack-banner.a437cbb2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429529/portfolio/ironhack-banner_oqfrcz.png");
   background-attachment: fixed;
   z-index: -2;
 }
@@ -874,7 +874,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/fst-banner.2bd94b74.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429545/portfolio/fst-banner_s1amnw.png");
   background-attachment: fixed;
   z-index: -2;
 }
@@ -923,7 +923,7 @@ h1, h2 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/recruitme-banner.6bcd4839.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_800,q_auto/v1565429552/portfolio/recruitme-banner_coyqys.png");
   background-attachment: fixed;
   z-index: -2;
 }

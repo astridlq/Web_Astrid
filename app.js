@@ -34,10 +34,7 @@ sr.reveal('.email-tel', { delay: 200, duration: 2000 });
 
 // NAVBAR SCROLL
 const checkHeader = throttle(() => {
-    console.log('checkHeader');
-
     const scrollPosition = Math.round(window.scrollY);
-    console.log(scrollPosition);
     if (scrollPosition > 300){
         document.querySelector('.navbar-1').classList.add('sticky');
     }
