@@ -219,23 +219,23 @@ h1, h2 {
 }
 
 .container-contact {
-  margin: 0 auto;
+  margin: 0 20px;
   min-height: 65vh;
   max-width: 900px;
 }
 
 .container-ironhack {
-  margin: 50px auto;
+  margin: 50px 20px;
   max-width: 900px;
 }
 
 .container-fst {
-  margin: 50px auto;
+  margin: 50px 20px;
   max-width: 900px;
 }
 
 .container-recruit-me {
-  margin: 50px auto;
+  margin: 50px 20px;
   max-width: 950px;
 }
 .container-recruit-me h2 {
