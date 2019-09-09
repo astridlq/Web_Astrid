@@ -604,7 +604,7 @@ h1, h2 {
 }
 .web-card p {
   padding-left: 30px;
-  opacity: 0 !important;
+  opacity: 0;
   font-size: 12px;
   line-height: 1.4;
   font-weight: 500em;
@@ -629,17 +629,18 @@ h1, h2 {
   vertical-align: middle;
 }
 
-.web-card:hover h3 {
-  font-size: 37px;
-  transform: translate(30px, 3px);
+@media all and (min-width: 768px) {
+  .web-card:hover h3 {
+    font-size: 37px;
+    transform: translate(30px, 3px);
+  }
+  .web-card:hover p {
+    opacity: 0.7;
+  }
+  .web-card:hover img {
+    width: 99%;
+  }
 }
-.web-card:hover p {
-  opacity: 0.7 !important;
-}
-.web-card:hover img {
-  width: 99%;
-}
-
 /* Sections Titles */
 .title-web-project {
   font-size: 60px;
@@ -666,6 +667,10 @@ h1, h2 {
   }
   .web-card h3 {
     font-size: 18px;
+  }
+  .web-card p {
+    opacity: 1;
+    padding-left: 0;
   }
 
   .title-web-project {

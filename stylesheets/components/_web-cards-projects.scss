@@ -48,7 +48,7 @@
 }
 p {
   padding-left: 30px;
-  opacity: 0 !important;
+  opacity: 0 ;
   font-size: 12px;
   line-height: 1.4;
   font-weight: 500em;
@@ -102,17 +102,21 @@ img {
 
 
 
-.web-card:hover {
- h3 {
-  font-size: 37px;
-  transform: translate(30px, 3px);
-}
-p {
-  opacity: 0.7 !important;
-}
-img {
-  width: 99%;
-}
+
+
+@media all and (min-width: 768px) {
+  .web-card:hover {
+     h3 {
+      font-size: 37px;
+      transform: translate(30px, 3px);
+    }
+    p {
+      opacity: 0.7;
+    }
+    img {
+      width: 99%;
+    }
+  }
 }
 
 
@@ -143,6 +147,11 @@ img {
     }
     h3 {
       font-size: 18px;
+    }
+    p {
+      opacity: 1;
+      padding-left: 0;
+
     }
   }
   .title-web-project {
