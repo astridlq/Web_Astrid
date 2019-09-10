@@ -1058,4 +1058,20 @@ h1, h2 {
   color: #cccfdd;
 }
 
+.wip {
+  text-align: center;
+}
+.wip img {
+  height: 100%;
+}
+
+@media (max-width: 425px) {
+  .wip {
+    text-align: center;
+  }
+  .wip img {
+    height: 200px;
+  }
+}
+
 /*# sourceMappingURL=/style.97fcb138.css.map */

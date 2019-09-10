@@ -39,6 +39,7 @@ h1, h2 {
   font-family: $bold-font;
 }
 
+
 // Components import
 @import "./stylesheets/components/_buttons.scss";
 @import "./stylesheets/components/_life-info.scss";
@@ -54,4 +55,5 @@ h1, h2 {
 @import "./stylesheets/components/_ironhack.scss";
 @import "./stylesheets/components/_fst-asie.scss";
 @import "./stylesheets/components/_recruitme.scss";
+@import "./stylesheets/components/_wip.scss";
 
