@@ -2,7 +2,7 @@
 .images-profile-grid {
   display: flex;
   justify-content: space-between;
-  margin: 130px 0 150px 0;
+  margin: 130px 0 10px 0;
   object-fit: cover;
   object-position: center;
   img {
@@ -98,7 +98,7 @@
 
 @media(max-width: 768px) {
   .image-profile-container {
-    margin-bottom: 70px;
+    // margin-bottom: 10px;
   }
   .images-profile-grid {
     display: grid;
@@ -107,7 +107,7 @@
     margin-top: 50px;
     overflow: hidden;
     text-align: center;
-    margin: 50px 16px;
+    margin: 50px 16px 30px 16px;
     img {
       object-position: center;
       width: 100%;

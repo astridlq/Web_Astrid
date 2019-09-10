@@ -82,7 +82,7 @@ h1, h2 {
 .images-profile-grid {
   display: flex;
   justify-content: space-between;
-  margin: 130px 0 150px 0;
+  margin: 130px 0 10px 0;
   object-fit: cover;
   object-position: center;
 }
@@ -150,10 +150,6 @@ h1, h2 {
   }
 }
 @media (max-width: 768px) {
-  .image-profile-container {
-    margin-bottom: 70px;
-  }
-
   .images-profile-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -161,7 +157,7 @@ h1, h2 {
     margin-top: 50px;
     overflow: hidden;
     text-align: center;
-    margin: 50px 16px;
+    margin: 50px 16px 30px 16px;
   }
   .images-profile-grid img {
     object-position: center;
@@ -559,10 +555,11 @@ h1, h2 {
 .container-web-projects {
   margin: 100px 0 0 0;
   position: relative;
+  overflow: hidden;
 }
 
 .card-columns {
-  padding: 100px 0 0 0;
+  padding: 130px 0 0 0;
   margin: 0 auto;
   width: 101%;
   column-gap: 100px !important;
@@ -646,13 +643,17 @@ h1, h2 {
   font-size: 60px;
   font-weight: 600;
   position: absolute;
-  top: -48px;
+  top: 0;
   right: 30%;
 }
 
 @media (max-width: 768px) {
+  .container-web-projects {
+    margin: 50px 0 0 0;
+  }
+
   .card-columns {
-    padding: 70px 0 0 0;
+    padding: 100px 0 0 0;
     column-gap: 15px !important;
   }
 
@@ -674,10 +675,10 @@ h1, h2 {
   }
 
   .title-web-project {
-    font-size: 38px;
+    font-size: 36px;
     position: absolute;
     top: 0;
-    right: 30%;
+    left: 15px;
   }
 }
 .skills {
