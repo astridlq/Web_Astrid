@@ -1,18 +1,18 @@
 .button {
-  color: $gray;
-  width: 100%;
-  padding: 20px;
-  border: 2px solid $gray;
+  font-size: 16px;
+  color: $yellow;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid $yellow;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   overflow:hidden;
   &:hover {
     overflow:hidden;
-    color: $yellow;
+    color: white;
+    background-color: $yellow;
     text-decoration: none;
-    border: 2px solid $yellow;
-
     cursor: pointer;
   }
 }
@@ -31,34 +31,49 @@
 
 
 @media(max-width: 768px) {
-    .button {
-      font-size: 10px;
-    }
-    .button-full {
-      font-size: 10px;
-    }
+  .button {
+    font-size: 10px;
+  }
+  .button-full {
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 425px) {
+  .nav-links {
+    justify-content: space-between !important;
+    margin: 10px 0 !important;
   }
 
-
-.arrow:before{
-  content:"→";
-  position:absolute;
-  color:black;
-  left: 83%;
-  opacity: 0;
-  -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  .button {
+    font-size: 10px;
+    width: auto;
+    padding: 10px;
+  }
+  .button-full {
+    font-size: 8px;
+    padding: 5px;
+  }
 }
 
-.arrow:hover:before{
-  left:84%;
-  opacity:1;
-}
+// BUTTON NAVIGATION on project pages
 
 .back-button {
-  color: white;
+  color: $yellow;
   padding-top: 20px;
   &:hover {
-    text-decoration: none;
     color: $yellow;
+    text-decoration: none;
   }
+}
+
+.btn-see-project {
+  text-align: center;
+  margin: 50px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
 }

@@ -11,41 +11,7 @@
   z-index: -2;
 }
 
-.banner-ironhack {
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429529/portfolio/ironhack-banner_oqfrcz.png");
-  background-attachment: fixed;
-  z-index: -2;
-}
-
-.banner-guithub {
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429528/portfolio/guithub-banner_c2vpwr.png");
-  background-attachment: fixed;
-  z-index: -2;
-}
-
-
-.banner-gallia {
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429523/portfolio/gallia_t5jpvq.jpg");
-  background-attachment: fixed;
-  z-index: -2;
-}
-
-
+// MAIN BANNER - landing page
 .header-banner {
   display: flex;
   align-items: center;
@@ -58,40 +24,153 @@
     font-weight: 600;
     font-size: 600%;
   }
-  a{
-    color: white;
+}
+
+// BANNER PROJECTS
+
+.container-project {
+  margin: 50px auto;
+  width: 65%;
+  .year {
+    margin: 50px 0;
+    color: $gray;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
+  .project-title {
+    h1 {
+      font-weight: 400;
+      font-size: 500%;
+      margin-bottom: 30px;
+      color: $yellow;
+      text-align: left;
+    }
     &:hover{
       color: $yellow;
-      text-decoration: none;
+      text-decoration: none !important;
     }
   }
-  h1{
-    border-bottom: solid 1px $yellow;
-    font-weight: 600;
-    font-size: 500%;
-  }
+
   h2 {
+    margin: 50px 0 20px;
+    color: $gray;
+    font-weight: 700;
+    letter-spacing: 7px;
     font-size: 16px;
   }
   p {
-    font-size: 150%;
+    color: $gray;
+    line-height: 1.7;
   }
-  .name-color{
-    color: $yellow;
+  .image-center {
+    text-align: center;
+    padding: 30px;
   }
 }
 
-@media(max-width: 728px) {
+
+@media(max-width: 768px) {
+  .container-project {
+    margin: 50px auto;
+    width: 85%;
+
+    .year {
+      font-size: 12px !important;
+    }
+  }
+    .project-title {
+      h1 {
+        font-size: 300% !important;
+      }
+    }
+    h2 {
+      margin: 30px 0 20px;
+      letter-spacing: 7px;
+      font-size: 13px;
+    }
+    p {
+      color: $gray;
+      line-height: 1.7;
+    }
+    .image-center {
+      text-align: center;
+      padding: 5px !important;
+    }
+
   .header-banner h1 {
     font-size: 400% !important;
-    margin: auto;
+    // margin: auto;
     padding: 20px;
-  }
+
 }
+  }
 
 
-@media(max-width: 425px) {
-  .header-banner h1 {
-    font-size: 300% !important;
+
+  @media(max-width: 425px) {
+    .year {
+      font-size: 9px !important;
+    }
+    .header-banner h1 {
+      font-size: 300% !important;
+    }
   }
-}
+
+// .banner-ironhack {
+//   min-height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429529/portfolio/ironhack-banner_oqfrcz.png");
+//   background-attachment: fixed;
+//   z-index: -2;
+// }
+
+// .banner-guithub {
+//   min-height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429528/portfolio/guithub-banner_c2vpwr.png");
+//   background-attachment: fixed;
+//   z-index: -2;
+// }
+
+
+// .banner-gallia {
+//   min-height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429523/portfolio/gallia_t5jpvq.jpg");
+//   background-attachment: fixed;
+//   z-index: -2;
+// }
+
+//   a{
+//     color: white;
+//     &:hover{
+//       color: $yellow;
+//       text-decoration: none;
+//     }
+//   }
+//   h1{
+//     border-bottom: solid 1px $yellow;
+//     font-weight: 600;
+//     font-size: 500%;
+//   }
+//   h2 {
+//     font-size: 16px;
+//   }
+//   p {
+//     font-size: 150%;
+//   }
+//   .name-color{
+//     color: $yellow;
+//   }
+// }
+
