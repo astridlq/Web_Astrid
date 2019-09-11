@@ -1120,15 +1120,12 @@ h1, h2 {
   text-align: center;
 }
 .wip img {
-  height: 100%;
+  width: 400px;
 }
 
 @media (max-width: 425px) {
-  .wip {
-    text-align: center;
-  }
   .wip img {
-    height: 200px;
+    width: 100%;
   }
 }
 

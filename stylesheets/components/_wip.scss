@@ -1,15 +1,12 @@
 .wip {
   text-align: center;
   img {
-    height: 100%;
+    width: 400px;
   }
 }
 
 @media(max-width: 425px) {
-  .wip {
-  text-align: center;
-  img {
-    height: 200px;
+  .wip img {
+    width: 100%;
   }
-}
 }
