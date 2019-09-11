@@ -1,54 +1,11 @@
-.banner-ironhack {
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://res.cloudinary.com/dduozp62x/image/upload/c_scale,w_1200,q_auto/v1565429529/portfolio/ironhack-banner_oqfrcz.png");
-  background-attachment: fixed;
-  z-index: -2;
+.mobile-screen-view {
+  width: 25%;
 }
 
-
-// .header-banner {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-//   color: white;
-//   .header-quote {
-//     margin: auto;
-//     line-height: 150%;
-//     font-weight: 600;
-//     font-size: 600%;
-//   }
-//   a{
-//     color: white;
-//     &:hover{
-//       color: $yellow;
-//       text-decoration: none;
-//     }
-//   }
-//   h1{
-//     border-bottom: solid 1px $yellow;
-//     font-weight: 600;
-//     font-size: 500%;
-//   }
-//   h2 {
-//     font-size: 16px;
-//   }
-//   p {
-//     font-size: 150%;
-//   }
-//   .name-color{
-//     color: $yellow;
-//   }
-// }
-
 .persona-intro {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
   img {
-    margin-left: 30px;
+    margin: 30px;
   }
 }
 
@@ -57,8 +14,31 @@
   justify-content: space-around;
   align-items: center;
   img {
+    width: 50%;
     margin: 30px;
   }
+}
+
+.app-view {
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  .detail-view {
+    padding: 5px;
+    width: 45%;
+    margin-right: 50px;
+    text-align: left;
+  }
+  img {
+    height: 40%;
+    margin: 20px;
+  }
+}
+
+.wireframing {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 @media(max-width: 768px) {
@@ -67,26 +47,60 @@
     overflow: hidden;
     img {
       width: 100%;
+      height: auto;
       margin: 0;
       object-fit: cover;
     }
   }
-}
 
-.wireframing {
-  margin-bottom: 50px;
-}
-
-
-@media(max-width: 768px) {
   .persona-intro {
-    display: block;
-    overflow: hidden;
     img {
       width: 100%;
       margin: 0;
       object-fit: cover;
     }
   }
+
+  .app-view {
+    .detail-view {
+      width: 300px;
+      margin-right: 30px;
+    }
+    img {
+      height: 400px;
+      margin: 20px;
+    }
+  }
+
+  .gif-wireframe {
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
 
+.link-prototype {
+  color: $yellow;
+  &:hover {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
+@media(max-width: 425px) {
+
+  .mobile-screen-view {
+    width: 55%;
+  }
+  .app-view {
+    display: block;
+    .detail-view {
+      width: 100%;
+    }
+    img {
+      height: 300px;
+      margin: 20px;
+    }
+  }
+}

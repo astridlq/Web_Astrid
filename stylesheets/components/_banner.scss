@@ -74,7 +74,12 @@
   .container-project {
     margin: 50px auto;
     width: 85%;
-
+    p {
+      font-size: 14px;
+    }
+    li {
+      font-size: 14px;
+    }
     .year {
       font-size: 12px !important;
     }
