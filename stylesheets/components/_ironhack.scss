@@ -37,13 +37,6 @@
     clear: both;
   }
 }
-.gif-wireframe {
-  width: 100%;
-  padding: 0;
-  object-fit: cover;
-  overflow: hidden;
-}
-
 
 .link-prototype {
   color: $yellow;
@@ -70,6 +63,12 @@
     }
   }
 
+  .gif-wireframe {
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    overflow: hidden;
+  }
   .persona-intro {
     img {
       width: 100%;
@@ -91,12 +90,6 @@
 }
 
 @media(max-width: 425px) {
-  // .wireframing {
-  //   img {
-  //     width: 100% !important;
-  //   }
-  // }
-
   .mobile-screen-view {
     width: 55%;
   }

@@ -16,6 +16,10 @@ h1, h2 {
   font-family: "Heebo", "sans-serif";
 }
 
+ul {
+  color: #3B413C;
+}
+
 .button {
   font-size: 16px;
   color: #FEDD33;
@@ -441,7 +445,7 @@ h1, h2 {
   font-size: 16px;
 }
 .container-project .project-title h1 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 500%;
   margin-bottom: 30px;
   color: #FEDD33;
@@ -450,6 +454,13 @@ h1, h2 {
 .container-project .project-title:hover {
   color: #FEDD33;
   text-decoration: none !important;
+}
+.container-project .design-process-title {
+  margin: 50px 0;
+  padding: 20px 0 0;
+  text-align: right;
+  font-size: 57px;
+  font-weight: 600;
 }
 .container-project h2 {
   margin: 50px 0 20px;
@@ -481,23 +492,22 @@ h1, h2 {
   .container-project .year {
     font-size: 12px !important;
   }
-
-  .project-title h1 {
+  .container-project .project-title h1 {
     font-size: 300% !important;
   }
-
-  h2 {
+  .container-project .design-process-title {
+    font-size: 200% !important;
+  }
+  .container-project h2 {
     margin: 30px 0 20px;
     letter-spacing: 7px;
     font-size: 13px;
   }
-
-  p {
+  .container-project p {
     color: #3B413C;
     line-height: 1.7;
   }
-
-  .image-center {
+  .container-project .image-center {
     text-align: center;
     padding: 5px !important;
   }
@@ -915,13 +925,6 @@ h1, h2 {
   clear: both;
 }
 
-.gif-wireframe {
-  width: 100%;
-  padding: 0;
-  object-fit: cover;
-  overflow: hidden;
-}
-
 .link-prototype {
   color: #FEDD33;
 }
@@ -945,6 +948,13 @@ h1, h2 {
     height: auto;
     margin: 0;
     object-fit: cover;
+  }
+
+  .gif-wireframe {
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    overflow: hidden;
   }
 
   .persona-intro img {
@@ -1035,16 +1045,28 @@ h1, h2 {
   padding-left: 15px;
 }
 
-@media (max-width: 768px) {
-  .header-banner h1 {
-    font-size: 25px;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  .header-banner p {
-    font-size: 14px;
-  }
+.user-journey-info .column {
+  height: 100%;
+  float: left;
+  width: 50%;
+  padding: 20px;
 }
+.user-journey-info .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.user-journey-info img {
+  width: 100%;
+}
+
+.ui-figma {
+  margin: 50px auto;
+}
+.ui-figma ol > li {
+  margin-top: 30px;
+}
+
 .screens {
   text-align: center;
   margin: 50px auto;
@@ -1054,6 +1076,15 @@ h1, h2 {
 }
 
 @media (max-width: 768px) {
+  .header-banner h1 {
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .header-banner p {
+    font-size: 14px;
+  }
+
   .image-project-list {
     column-count: 1;
   }
@@ -1065,13 +1096,12 @@ h1, h2 {
     margin-top: 15px;
   }
 }
-.ui-figma {
-  margin: 50px auto;
+@media screen and (max-width: 768px) {
+  .user-journey-info .column {
+    height: 100%;
+    width: 100%;
+  }
 }
-.ui-figma ol > li {
-  margin-top: 30px;
-}
-
 @media (max-width: 768px) {
   .ui-figma img {
     width: 100%;
