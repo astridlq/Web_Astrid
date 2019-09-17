@@ -46,3 +46,4 @@ const checkHeader = throttle(() => {
 window.addEventListener('scroll', checkHeader, {
   passive: true
 });
+

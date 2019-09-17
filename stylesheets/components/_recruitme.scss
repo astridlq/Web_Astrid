@@ -44,9 +44,11 @@
   }
 }
 
-.ui-figma {
-  ol {
-    padding-left: 15px;
+
+.color-scheme-img {
+  text-align: center;
+  img {
+    margin: 30px;
   }
 }
 
@@ -65,21 +67,46 @@
   img {
     width: 100%;
   }
-}
-
-.ui-figma {
-  margin: 50px auto;
-  ol > li{
-    margin-top: 30px;
+  a {
+    color: $light-gray;
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+  li {
+    padding-left: 20px;
   }
 }
 
-.screens {
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+  .grid-item img {
+    padding: 20px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .legend-mockups {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.user-journey-info {
+  display: flex;
+  align-items: center;
+}
+
+
+.login-recruitme {
   text-align: center;
   margin: 50px auto;
-  ul {
-    margin-top: 30px;
-  }
+  font-size: 12px;
+  color: $light-gray;
 }
 
 @media(max-width: 768px) {
@@ -93,15 +120,17 @@
       font-size: 14px;
     }
   }
-
-  .image-project-list {
-    column-count: 1;
-    ol {
-      padding-inline-start: 0;
-      list-style-type: none;
-    }
-    li {
-      margin-top: 15px;
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+  }
+  .user-journey-info {
+    display: block;
+    overflow: hidden;
+    img {
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
     }
   }
 }
@@ -115,37 +144,29 @@
   }
 }
 
-
-@media(max-width: 768px) {
-  .ui-figma {
+@media(max-width: 425px) {
+ .grid-container {
+  grid-template-columns: 1fr;
+  margin: 10px;
+}
+  .color-scheme-img {
     img {
-      width: 100%;
       margin: 0;
-      object-fit: cover;
+      width: 100%;
     }
   }
-}
-
-.user-journey-info {
-  display: flex;
-  align-items: center;
-}
-
-@media(max-width: 768px) {
   .user-journey-info {
-    display: block;
-    overflow: hidden;
-    img {
-      width: 100%;
-      margin: 0;
-      object-fit: cover;
+    ol {
+      padding-left: 15px;
+    }
+    li {
+      padding-left: 5px;
+
     }
   }
+
 }
 
-.login-recruitme {
-  margin: 50px 0;
-  font-size: 12px;
-  color: $light-gray;
-}
+
+
 

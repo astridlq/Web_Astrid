@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #FEDD33;
 }
 
 h1, h2 {
@@ -509,7 +510,10 @@ ul {
   }
   .container-project .image-center {
     text-align: center;
-    padding: 5px !important;
+    padding: 10px !important;
+  }
+  .container-project .image-center img {
+    width: 100%;
   }
 
   .header-banner h1 {
@@ -1041,8 +1045,11 @@ ul {
   color: #FEDD33;
 }
 
-.ui-figma ol {
-  padding-left: 15px;
+.color-scheme-img {
+  text-align: center;
+}
+.color-scheme-img img {
+  margin: 30px;
 }
 
 .user-journey-info .column {
@@ -1059,20 +1066,43 @@ ul {
 .user-journey-info img {
   width: 100%;
 }
-
-.ui-figma {
-  margin: 50px auto;
+.user-journey-info a {
+  color: #cccfdd;
 }
-.ui-figma ol > li {
-  margin-top: 30px;
+.user-journey-info a:hover {
+  color: #FEDD33;
+  text-decoration: none;
+}
+.user-journey-info li {
+  padding-left: 20px;
 }
 
-.screens {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+}
+.grid-container .grid-item img {
+  padding: 20px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.grid-container .legend-mockups {
+  text-align: center;
+  font-size: 12px;
+}
+
+.user-journey-info {
+  display: flex;
+  align-items: center;
+}
+
+.login-recruitme {
   text-align: center;
   margin: 50px auto;
-}
-.screens ul {
-  margin-top: 30px;
+  font-size: 12px;
+  color: #cccfdd;
 }
 
 @media (max-width: 768px) {
@@ -1085,36 +1115,11 @@ ul {
     font-size: 14px;
   }
 
-  .image-project-list {
-    column-count: 1;
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
   }
-  .image-project-list ol {
-    padding-inline-start: 0;
-    list-style-type: none;
-  }
-  .image-project-list li {
-    margin-top: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .user-journey-info .column {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .ui-figma img {
-    width: 100%;
-    margin: 0;
-    object-fit: cover;
-  }
-}
-.user-journey-info {
-  display: flex;
-  align-items: center;
-}
 
-@media (max-width: 768px) {
   .user-journey-info {
     display: block;
     overflow: hidden;
@@ -1125,12 +1130,30 @@ ul {
     object-fit: cover;
   }
 }
-.login-recruitme {
-  margin: 50px 0;
-  font-size: 12px;
-  color: #cccfdd;
+@media screen and (max-width: 768px) {
+  .user-journey-info .column {
+    height: 100%;
+    width: 100%;
+  }
 }
+@media (max-width: 425px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
 
+  .color-scheme-img img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .user-journey-info ol {
+    padding-left: 15px;
+  }
+  .user-journey-info li {
+    padding-left: 5px;
+  }
+}
 .wip {
   text-align: center;
 }

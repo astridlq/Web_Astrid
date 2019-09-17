@@ -109,7 +109,10 @@
     }
     .image-center {
       text-align: center;
-      padding: 5px !important;
+      padding: 10px !important;
+      img {
+      width: 100%;
+    }
     }
   }
 
