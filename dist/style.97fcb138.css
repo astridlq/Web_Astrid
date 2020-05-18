@@ -431,7 +431,7 @@ ul {
   margin: auto;
   line-height: 150%;
   font-weight: 600;
-  font-size: 600%;
+  font-size: 450%;
 }
 
 .container-project {
@@ -694,7 +694,7 @@ ul {
   font-weight: 600;
   position: absolute;
   top: 0;
-  right: 30%;
+  right: 35%;
 }
 
 @media (max-width: 768px) {
