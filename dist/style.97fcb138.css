@@ -1166,5 +1166,35 @@ ul {
     width: 100%;
   }
 }
+.competitor-analysis img {
+  width: 50%;
+  margin: 20px 20px 20px 0;
+  padding: 30px;
+  border: 1px #e9ecef solid;
+}
+
+.competitor-scope {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .competitor-scope {
+    display: block;
+    overflow: hidden;
+  }
+  .competitor-scope .bansdintown-img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    object-fit: cover;
+  }
+}
+.job-to-be-done {
+  font-size: 24px;
+  margin: 0 30% 0 5%;
+}
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
