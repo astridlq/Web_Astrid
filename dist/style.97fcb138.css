@@ -1197,4 +1197,13 @@ ul {
   margin: 0 30% 0 5%;
 }
 
+.problematic {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 3% 0 3% 30%;
+  padding: 5% 10%;
+  background-color: #FEDD33;
+}
+
 /*# sourceMappingURL=/style.97fcb138.css.map */
