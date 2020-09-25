@@ -24,8 +24,9 @@ sr.reveal('.web-card-show-2', { delay: 400, duration: 2000, distance: '50px' });
 
 // CONTACT PAGE
 sr.reveal('.profile-avatar', { delay: 200, duration: 2500 });
-sr.reveal('.contact-intro', { delay: 200, duration: 2000 });
-sr.reveal('.tech-skills', { delay: 200, duration: 2000 });
+sr.reveal('.contact-intro', { delay: 300, duration: 2000 });
+// sr.reveal('.tech-skills', { delay: 200, duration: 2000 });
+sr.reveal('.container-info-contact', { delay: 400, duration: 1000 });
 sr.reveal('.email-tel', { delay: 200, duration: 2000 });
 
 

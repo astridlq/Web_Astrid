@@ -13,6 +13,10 @@ a {
   color: #FEDD33;
 }
 
+p {
+  color: #3B413C;
+}
+
 h1, h2 {
   font-family: "Heebo", "sans-serif";
 }
@@ -115,10 +119,11 @@ ul {
   position: relative;
 }
 
-.title-photo {
+.title-yellow {
   background: #FEDD33;
   font-size: 16px;
   font-weight: 100;
+  max-height: 50px;
 }
 
 .origin {
@@ -246,8 +251,12 @@ ul {
 .container-contact {
   margin: 0 auto;
   padding: 0 10px;
-  min-height: 65vh;
-  max-width: 900px;
+  max-width: 1000px;
+}
+
+.container-info-contact {
+  margin: 0 40px;
+  max-width: 1400px;
 }
 
 .container-ironhack {
@@ -317,14 +326,14 @@ ul {
   color: white;
   font-weight: 500;
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 .navbar-1 h3 {
   z-index: 4;
   color: white;
   font-weight: 500;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -387,7 +396,7 @@ ul {
   height: 90px;
   margin-top: 30px;
   padding-left: 12%;
-  color: #cccfdd;
+  color: #3B413C;
 }
 
 .footer-links {
@@ -396,7 +405,7 @@ ul {
 }
 
 .footer-links a {
-  color: #cccfdd;
+  color: #3B413C;
   text-decoration: none;
   font-size: 24px;
   padding: 20px 0;
@@ -813,58 +822,55 @@ ul {
 /* PROFILE*/
 .info-profile {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-height: 300px;
+  grid-template-columns: 2fr 3fr;
+  max-height: 400px;
   overflow: hidden;
   margin: 70px auto;
   position: relative;
 }
 .info-profile h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
+}
+.info-profile img {
+  width: 100%;
 }
 
 .contact-intro {
-  background-color: #FEDD33;
+  border-right: 3px solid #FEDD33;
   padding: 40px;
-}
-
-.tech-skills {
-  background: #fedd3454;
-  padding: 40px;
-}
-.tech-skills h2 {
-  font-weight: 600;
-  font-size: 20px;
-  margin: 15px 0;
-}
-.tech-skills ul {
-  list-style-type: circle;
-  padding-inline-start: 20px;
 }
 
 @media (max-width: 768px) {
   .info-profile {
+    max-height: none;
+  }
+  .info-profile img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .info-profile {
     margin: 0 auto;
     grid-template-columns: 1fr;
     margin-bottom: 20px;
-    max-height: none;
   }
   .info-profile .contact-intro {
+    border-right: none;
     object-fit: cover;
-    margin: 0 auto;
-    width: 300px;
-  }
-  .info-profile .tech-skills {
     margin: 0 auto;
     width: 300px;
   }
   .info-profile img {
     object-fit: cover;
-    margin: 0 auto;
+    height: 300px;
   }
-}
-@media (max-width: 425px) {
+  .info-profile .tech-skills {
+    margin: 0 auto;
+    width: 300px;
+  }
+
   .info-profile .contact-intro {
     width: 100%;
   }
@@ -876,22 +882,97 @@ ul {
   }
 }
 .email-tel {
-  max-width: 300px;
   margin: 0 auto;
-  border-bottom: #FEDD33 solid 3px;
-  text-align: center;
+  text-align: right;
   font-family: "Heebo", "sans-serif";
-  font-size: 20px;
+  font-weight: 600;
 }
 .email-tel a {
   margin-bottom: 1rem;
-  color: black;
+  padding: 0 3px;
+  color: #3B413C;
 }
 .email-tel a:hover {
   text-decoration: none;
-  color: #FEDD33;
+  color: #3B413C;
+  background-color: #FEDD33;
 }
 
+.about-section {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+.about-section h2 {
+  width: 80%;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  border-top: 3px solid #FEDD33;
+}
+
+.about-section-left {
+  margin: 0 0 50px 30px;
+}
+
+.column-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills-list {
+  margin: 0 30px 40px 30px;
+}
+.skills-list ul {
+  padding: 0 0 0 20px;
+}
+
+.job-title {
+  font-weight: 600;
+  font-family: "Heebo", "sans-serif";
+}
+
+.job-firstline {
+  display: flex;
+}
+
+.location {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 12px;
+  margin: 3px 10px;
+}
+
+.work-period {
+  font-style: italic;
+  padding-left: 30px;
+  margin-right: 30px;
+  margin: 10px 53% 10px -30px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .work-period {
+    margin: 10px 0 10px -50px;
+    background-color: white;
+  }
+
+  .job-firstline {
+    display: block;
+  }
+  .job-firstline .location {
+    margin: -10px 0 10px 0;
+  }
+}
+@media (max-width: 425px) {
+  .column-skills {
+    display: block;
+  }
+}
 .mobile-screen-view {
   width: 25%;
 }

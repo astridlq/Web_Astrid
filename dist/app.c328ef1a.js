@@ -758,12 +758,13 @@ sr.reveal('.profile-avatar', {
   duration: 2500
 });
 sr.reveal('.contact-intro', {
-  delay: 200,
+  delay: 300,
   duration: 2000
-});
-sr.reveal('.tech-skills', {
-  delay: 200,
-  duration: 2000
+}); // sr.reveal('.tech-skills', { delay: 200, duration: 2000 });
+
+sr.reveal('.container-info-contact', {
+  delay: 400,
+  duration: 1000
 });
 sr.reveal('.email-tel', {
   delay: 200,
@@ -810,7 +811,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50499" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58176" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
