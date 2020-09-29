@@ -3,7 +3,7 @@
 .info-profile {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  max-height: 400px;
+  // max-height: 400px;
   overflow: hidden;
   margin: 70px auto;
   position: relative;
@@ -12,28 +12,17 @@
     font-weight: 600;
   }
   img {
+    margin-top: 30px;
     width: 100%;
   }
 }
 
 .contact-intro {
   border-right: 3px solid #FEDD33;
-  padding: 40px;
+  margin: 30px;
+  padding-right: 40px;
+  min-height: 392px;
 }
-
-// .tech-skills {
-//   background: #f8f9fa;
-//   padding: 40px;
-//   h2 {
-//     font-weight: 600;
-//     font-size: 20px;
-//     margin: 15px 0;
-//   }
-//   ul {
-//     list-style-type: circle;
-//     padding-inline-start: 20px;
-//   }
-// }
 
 @media(max-width: 768px) {
   .info-profile {
@@ -53,31 +42,20 @@
     .contact-intro {
       border-right: none;
       object-fit: cover;
-      margin: 0 auto;
-      width: 300px;
+      padding: 0;
+      margin: 10px 10px 10px 0;
+      // width: 100%;
     }
     img {
-      object-fit: cover;
+      margin-top: 10px;
       height: 300px;
+      width: 100%;
     }
     .tech-skills {
       margin: 0 auto;
-      width: 300px;
-    }
-  }
-  .info-profile {
-    .contact-intro {
-      width: 100%;
-    }
-    .tech-skills {
-      width: 100%;
-    }
-    img {
       width: 100%;
     }
   }
-
-
 }
 
 

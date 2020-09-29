@@ -255,7 +255,7 @@ ul {
 }
 
 .container-info-contact {
-  margin: 0 40px;
+  margin: 0 auto;
   max-width: 1400px;
 }
 
@@ -308,6 +308,11 @@ ul {
 @media (max-width: 768px) {
   .container-skills {
     max-width: 720px;
+  }
+}
+@media (max-width: 425px) {
+  .container-info-contact {
+    margin: 10px 20px 10px 10px;
   }
 }
 /* Navbar */
@@ -823,7 +828,6 @@ ul {
 .info-profile {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  max-height: 400px;
   overflow: hidden;
   margin: 70px auto;
   position: relative;
@@ -833,12 +837,15 @@ ul {
   font-weight: 600;
 }
 .info-profile img {
+  margin-top: 30px;
   width: 100%;
 }
 
 .contact-intro {
   border-right: 3px solid #FEDD33;
-  padding: 40px;
+  margin: 30px;
+  padding-right: 40px;
+  min-height: 392px;
 }
 
 @media (max-width: 768px) {
@@ -859,25 +866,16 @@ ul {
   .info-profile .contact-intro {
     border-right: none;
     object-fit: cover;
-    margin: 0 auto;
-    width: 300px;
+    padding: 0;
+    margin: 10px 10px 10px 0;
   }
   .info-profile img {
-    object-fit: cover;
+    margin-top: 10px;
     height: 300px;
+    width: 100%;
   }
   .info-profile .tech-skills {
     margin: 0 auto;
-    width: 300px;
-  }
-
-  .info-profile .contact-intro {
-    width: 100%;
-  }
-  .info-profile .tech-skills {
-    width: 100%;
-  }
-  .info-profile img {
     width: 100%;
   }
 }
