@@ -27,7 +27,31 @@
 
 
 @media(max-width: 768px) {
-.image-project-list-3 {
-        column-count: 1;
+  .image-project-list-3 {
+    column-count: 1;
+  }
+}
+
+
+.img-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 50%;
+    margin: 30px 30px 30px 0;
+  }
+}
+
+@media(max-width: 1024px) {
+  .img-left {
+    display: block;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      object-fit: cover;
     }
   }
+}

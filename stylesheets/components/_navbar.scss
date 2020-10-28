@@ -9,6 +9,7 @@
   align-items: center;
   z-index: 3;
   transition: background-color 300ms ease;
+  // box-shadow: 0 4px 8px 0 rgb(0 0 0 / 9%);
   p {
     z-index: 4;
     color: white;
@@ -28,6 +29,7 @@
 
 .navbar-1.sticky {
   background-color: $yellow;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 9%);
 }
 
 @media(max-width: 425px) {

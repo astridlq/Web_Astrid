@@ -1,0 +1,73 @@
+.hologram-gif {
+  width: 30%;
+}
+
+.img-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 50%;
+    margin: 10px 30px 30px 0;
+  }
+}
+
+@media(max-width: 1024px) {
+  .img-left {
+    display: block;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.gif-nike {
+  background-color: #f9f9fb;
+  padding: 0 27% 0 44%;
+  width: 100%;
+}
+
+@media(max-width: 425px) {
+  .gif-nike {
+    padding: 20px;
+  }
+}
+
+
+.nike-wireframe {
+  border: 1px solid $light-gray;
+  margin: 30px 0;
+}
+
+.research {
+  h4 {
+    font-size: 20px;
+    font-style: $bold-font;
+  }
+}
+
+.ideation {
+  h4 {
+    font-size: 20px;
+    font-style: $bold-font;
+  }
+}
+
+@media(max-width: 425px) {
+  .research {
+    h4 {
+      font-size: 16px;
+    }
+  }
+  .ideation {
+    h4 {
+      font-size: 16px;
+    }
+  }
+}
+

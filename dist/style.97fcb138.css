@@ -344,6 +344,7 @@ ul {
 
 .navbar-1.sticky {
   background-color: #FEDD33;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
 }
 
 @media (max-width: 425px) {
@@ -824,6 +825,28 @@ ul {
     column-count: 1;
   }
 }
+.img-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-left img {
+  width: 50%;
+  margin: 30px 30px 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .img-left {
+    display: block;
+    overflow: hidden;
+  }
+  .img-left img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    object-fit: cover;
+  }
+}
 /* PROFILE*/
 .info-profile {
   display: grid;
@@ -1283,6 +1306,68 @@ ul {
   margin: 3% 0 3% 30%;
   padding: 5% 10%;
   background-color: #FEDD33;
+}
+
+.hologram-gif {
+  width: 30%;
+}
+
+.img-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-left img {
+  width: 50%;
+  margin: 10px 30px 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .img-left {
+    display: block;
+    overflow: hidden;
+  }
+  .img-left img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    object-fit: cover;
+  }
+}
+.gif-nike {
+  background-color: #f9f9fb;
+  padding: 0 27% 0 44%;
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .gif-nike {
+    padding: 20px;
+  }
+}
+.nike-wireframe {
+  border: 1px solid #cccfdd;
+  margin: 30px 0;
+}
+
+.research h4 {
+  font-size: 20px;
+  font-style: "Heebo", "sans-serif";
+}
+
+.ideation h4 {
+  font-size: 20px;
+  font-style: "Heebo", "sans-serif";
+}
+
+@media (max-width: 425px) {
+  .research h4 {
+    font-size: 16px;
+  }
+
+  .ideation h4 {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
