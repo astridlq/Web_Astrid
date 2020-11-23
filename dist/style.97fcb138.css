@@ -27,10 +27,10 @@ ul {
 
 .button {
   font-size: 16px;
-  color: #FEDD33;
+  color: #bbd1df;
   width: 250px;
   padding: 20px;
-  border: 1px solid #FEDD33;
+  border: 1px solid #bbd1df;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -39,14 +39,14 @@ ul {
 .button:hover {
   overflow: hidden;
   color: white;
-  background-color: #FEDD33;
+  background-color: #bbd1df;
   text-decoration: none;
   cursor: pointer;
 }
 
 .button-full {
   color: white !important;
-  background-color: #FEDD33;
+  background-color: #bbd1df;
   width: 100%;
   margin-right: 5px;
   padding: 20px;
@@ -59,7 +59,9 @@ ul {
 @media (max-width: 768px) {
   .button {
     font-size: 10px;
-    padding: 10px;
+    padding: 10px 0;
+    margin: 0 10px;
+    width: 300px;
   }
 
   .button-full {
@@ -74,7 +76,7 @@ ul {
 
   .button {
     font-size: 10px;
-    width: auto;
+    width: 200px;
     padding: 10px;
   }
 
@@ -84,7 +86,7 @@ ul {
   }
 }
 .back-button {
-  color: #FEDD33;
+  color: #bbd1df;
   padding-top: 20px;
 }
 .back-button:hover {
@@ -327,6 +329,7 @@ ul {
   transition: background-color 300ms ease;
 }
 .navbar-1 p {
+  font-family: "Raleway", "Helvetica", "sans-serif";
   z-index: 4;
   color: white;
   font-weight: 500;
@@ -334,6 +337,7 @@ ul {
   font-size: 20px;
 }
 .navbar-1 h3 {
+  font-family: "Raleway", "Helvetica", "sans-serif";
   z-index: 4;
   color: white;
   font-weight: 500;
@@ -343,7 +347,7 @@ ul {
 }
 
 .navbar-1.sticky {
-  background-color: #FEDD33;
+  background-color: #bbd1df;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -354,7 +358,7 @@ ul {
 }
 .nav-back {
   min-height: 80px;
-  background-color: #FEDD33;
+  background-color: #bbd1df;
   width: 100%;
   position: sticky;
   top: 0;
@@ -402,7 +406,7 @@ ul {
   height: 90px;
   margin-top: 30px;
   padding-left: 12%;
-  color: #3B413C;
+  color: #bbd1df;
 }
 
 .footer-links {
@@ -411,7 +415,7 @@ ul {
 }
 
 .footer-links a {
-  color: #3B413C;
+  color: #bbd1df;
   text-decoration: none;
   font-size: 24px;
   padding: 20px 0;
@@ -1296,18 +1300,25 @@ ul {
 }
 .job-to-be-done {
   font-size: 24px;
-  margin: 0 30% 0 5%;
+  margin: 3% 30% 3% 5%;
 }
 
 .problematic {
   text-align: right;
   font-size: 18px;
   font-weight: 600;
-  margin: 3% 0 3% 30%;
+  margin: 6% 0 6% 30%;
   padding: 5% 10%;
   background-color: #FEDD33;
 }
 
+@media (max-width: 768px) {
+  .job-to-be-done {
+    margin: 30px;
+    text-align: center;
+    font-size: 18px !important;
+  }
+}
 .hologram-gif {
   width: 30%;
 }
@@ -1367,6 +1378,105 @@ ul {
 
   .ideation h4 {
     font-size: 16px;
+  }
+}
+.center {
+  display: block;
+  margin: 7% auto;
+}
+
+.pesca-home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+@media (max-width: 425px) {
+  .pesca-home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}
+.full-image-white-bottom {
+  margin: 20px 0;
+}
+
+.full-with-padding {
+  padding: 0 5% 1% 5%;
+}
+
+.photo-explanation {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.photo-explanation p {
+  padding-left: 30px;
+}
+
+.full-with-text-r {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  margin: 6% 5%;
+}
+.full-with-text-r p, .full-with-text-r ul {
+  padding: 0 10%;
+  margin: 30px 0;
+}
+.full-with-text-r h6 {
+  padding: 0 10%;
+  margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .full-with-text-r {
+    grid-template-columns: 1fr;
+  }
+  .full-with-text-r p {
+    padding: 0;
+  }
+  .full-with-text-r ul {
+    padding-left: 15px;
+  }
+}
+.full-with-text-l {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  margin: 0 5%;
+}
+.full-with-text-l p, .full-with-text-l ul {
+  padding: 0 10% 0 25px;
+  margin-top: 30px;
+}
+.full-with-text-l h6 {
+  padding: 0 25px;
+  margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .full-with-text-l {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .full-with-text-l p {
+    padding: 0;
+  }
+  .full-with-text-l ul {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .photo-explanation {
+    grid-template-columns: 1fr;
+  }
+  .photo-explanation p {
+    padding: 0;
+  }
+  .photo-explanation ul {
+    padding-left: 15px;
   }
 }
 

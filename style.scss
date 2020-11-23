@@ -15,7 +15,8 @@ $bold-font: "Heebo", "sans-serif";
 $red: #FE5F55;
 $blue: #0FA3B1;
 $yellow: #FEDD33;
-$orange: #F77402;
+$light-blue: #77c5ff;
+$light-blue-grey: #bbd1df;
 $green: #5DEF62;
 $gray: #3B413C;
 $light-gray: #cccfdd;
@@ -44,6 +45,7 @@ h1, h2 {
   font-family: $bold-font;
 }
 
+
 ul {
   color: $gray;
 }
@@ -68,4 +70,5 @@ ul {
 @import "./stylesheets/components/_livestream.scss";
 @import "./stylesheets/components/_job-to-be-done.scss";
 @import "./stylesheets/components/_nike.scss";
+@import "./stylesheets/components/_iblea.scss";
 

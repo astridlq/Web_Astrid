@@ -1,9 +1,9 @@
 .button {
   font-size: 16px;
-  color: $yellow;
+  color: $light-blue-grey;
   width: 250px;
   padding: 20px;
-  border: 1px solid $yellow;
+  border: 1px solid $light-blue-grey;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -11,7 +11,7 @@
   &:hover {
     overflow:hidden;
     color: white;
-    background-color: $yellow;
+    background-color: $light-blue-grey;
     text-decoration: none;
     cursor: pointer;
   }
@@ -19,7 +19,7 @@
 
 .button-full {
   color: white !important;
-  background-color: $yellow;
+  background-color: $light-blue-grey;
   width: 100%;
   margin-right: 5px;
   padding: 20px;
@@ -33,7 +33,9 @@
 @media(max-width: 768px) {
   .button {
     font-size: 10px;
-    padding: 10px;
+    padding: 10px 0;
+    margin: 0 10px;
+    width: 300px;
   }
   .button-full {
     font-size: 10px;
@@ -48,7 +50,7 @@
 
   .button {
     font-size: 10px;
-    width: auto;
+    width: 200px;
     padding: 10px;
   }
   .button-full {
@@ -60,7 +62,7 @@
 // BUTTON NAVIGATION on project pages
 
 .back-button {
-  color: $yellow;
+  color: $light-blue-grey;
   padding-top: 20px;
   &:hover {
     color: $yellow;

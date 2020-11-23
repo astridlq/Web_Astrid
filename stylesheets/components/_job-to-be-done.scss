@@ -1,13 +1,21 @@
 .job-to-be-done {
   font-size: 24px;
-  margin: 0 30% 0 5%;
+  margin: 3% 30% 3% 5%;
 }
 
 .problematic {
   text-align: right;
   font-size: 18px;
   font-weight: 600;
-  margin: 3% 0 3% 30%;
+  margin: 6% 0 6% 30%;
   padding: 5% 10%;
   background-color: $yellow;
+}
+
+@media(max-width: 768px) {
+  .job-to-be-done{
+    margin: 30px;
+    text-align: center;
+    font-size: 18px !important;
+  }
 }
