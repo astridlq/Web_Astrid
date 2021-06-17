@@ -2,6 +2,15 @@
   width: 30%;
 }
 
+.link {
+  text-decoration: none;
+  color: $yellow;
+  &:hover{
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
 .img-left {
   display: flex;
   justify-content: space-around;

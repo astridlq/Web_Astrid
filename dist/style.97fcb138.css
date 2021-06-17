@@ -852,6 +852,10 @@ ul {
   }
 }
 /* PROFILE*/
+.image-profile-container {
+  margin: 0 1px;
+}
+
 .info-profile {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -1321,6 +1325,15 @@ ul {
 }
 .hologram-gif {
   width: 30%;
+}
+
+.link {
+  text-decoration: none;
+  color: #FEDD33;
+}
+.link:hover {
+  color: #FEDD33;
+  text-decoration: none;
 }
 
 .img-left {
